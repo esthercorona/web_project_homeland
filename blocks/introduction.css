@@ -1,0 +1,49 @@
+.introduction {
+  width: 90%;
+  max-width: 1280px;
+  margin: 2rem auto;
+  color: white;
+  padding: 2rem;
+  text-align: left;
+}
+
+.introduction__heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.introduction__quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.quote-author {
+  font-style: normal;
+  text-align: right;
+}
+
+.introduction__text {
+  font-size: 1rem;
+  max-width: 720px;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .introduction__heading {
+    font-size: 1.4rem;
+  }
+  .introduction__text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .introduction__heading {
+    font-size: 1.6rem;
+  }
+  .introduction__text {
+    font-size: 1.2rem;
+  }
+}
