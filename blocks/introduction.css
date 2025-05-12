@@ -1,14 +1,12 @@
 .introduction {
-  width: 90%;
-  max-width: 1280px;
+  width: 830px;
   margin: 2rem auto;
-  color: white;
-  padding: 2rem;
+  color: #fff;
   text-align: left;
 }
 
 .introduction__heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -34,6 +32,7 @@
   .introduction__heading {
     font-size: 1.4rem;
   }
+
   .introduction__text {
     font-size: 1.1rem;
   }
@@ -43,7 +42,35 @@
   .introduction__heading {
     font-size: 1.6rem;
   }
+
   .introduction__text {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .introduction {
+    width: 90%;
+    max-width: none;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin: 2rem auto;
+  }
+
+  .introduction__heading {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .introduction__text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .quote-author {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 1rem;
   }
 }
