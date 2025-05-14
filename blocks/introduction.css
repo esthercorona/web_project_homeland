@@ -21,7 +21,7 @@
   margin-bottom: 16px;
 }
 
-.quote-author {
+.introduction__quote-author {
   font-style: normal;
   text-align: right;
   font-size: 14px;
@@ -46,7 +46,7 @@
     line-height: 27px;
   }
 
-  .quote-author {
+  .introduction__quote-author {
     font-size: 16px;
     margin-top: 0;
   }
