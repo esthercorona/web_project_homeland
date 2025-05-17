@@ -41,7 +41,6 @@
   .hero__title {
     font-size: 60px;
   }
-
   .hero__subtitle {
     font-size: 24px;
   }
@@ -52,9 +51,20 @@
     font-size: 96px;
     line-height: 100px;
   }
-
   .hero__subtitle {
     font-size: 30px;
     line-height: 36px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero__content {
+    padding: 0;
+    width: 100%;
+  }
+  .hero__image {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0;
   }
 }

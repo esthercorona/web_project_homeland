@@ -55,7 +55,8 @@
 @media screen and (min-width: 1024px) {
   .introduction {
     width: 830px;
-    padding: 0;
+    max-width: none;
+    margin-left: calc(50% - 492px);
   }
 
   .introduction__heading {
