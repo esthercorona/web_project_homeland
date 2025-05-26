@@ -1,0 +1,68 @@
+.places {
+  display: grid;
+  row-gap: 80px;
+  max-width: 987px;
+  margin-left: 148px;
+  margin-right: auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.places__card {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  column-gap: 40px;
+  align-items: start;
+}
+.places__title {
+  font-size: 42px;
+  font-weight: 900;
+  margin: 0 0 16px;
+  color: #ffffff;
+}
+
+.places__label {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+}
+
+.places__artists {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.places__text {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.places__button {
+  font-size: 16px;
+  padding: 12px 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+@media screen and (max-width: 1024px) {
+  .places {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .places__card {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}

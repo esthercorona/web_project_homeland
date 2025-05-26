@@ -1,9 +1,15 @@
+.hero {
+  display: grid;
+  gap: 24px;
+  text-align: center;
+}
+
 .hero__content {
   max-width: 984px;
   width: 90%;
   margin: 0 auto;
   padding: 32px 0;
-  text-align: center;
+  /* text-align: center;*/
 }
 
 .hero__title {
