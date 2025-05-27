@@ -1,4 +1,4 @@
-.places {
+/*.places {
   display: grid;
   row-gap: 80px;
   max-width: 987px;
@@ -90,27 +90,116 @@
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+*/
+.places {
+  display: grid;
+  row-gap: 80px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  text-align: left;
+}
 
-@media screen and (max-width: 1024px) {
-  .places {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.places__card {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "info"
+    "button";
+  row-gap: 24px;
+}
+
+.places__title {
+  grid-area: title;
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 900;
+  margin: 0 0 24px;
+  color: #ffffff;
+}
+
+.places__image {
+  grid-area: image;
+}
+.places__info {
+  grid-area: info;
+}
+.places__button {
+  grid-area: button;
+}
+
+.places__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.places__label {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+}
+
+.places__artists {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.places__text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.places__button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablet y desktop (≥544px): dos columnas */
+@media screen and (min-width: 544px) {
+  .places__card {
+    grid-template-columns: 460px 1fr;
+    grid-template-areas:
+      "title title"
+      "image info"
+      "button button";
+    column-gap: 40px;
+    row-gap: 24px;
+    align-items: start;
   }
 
-  .places__card {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-      "title"
-      "image"
-      "info"
-      "button";
+  .places__title {
+    width: 460px;
+  }
+
+  .places__image {
+    width: auto;
+  }
+
+  .places__button {
+    justify-self: start;
   }
 }
 
+/* Desktop ancho (≥1024px): centra la sección */
 @media screen and (min-width: 1024px) {
   .places {
+    width: 984px;
     margin-left: calc(50% - 492px);
     padding: 0;
   }
