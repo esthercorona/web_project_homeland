@@ -67,6 +67,8 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .places__card .places__image img:hover {
@@ -95,7 +97,7 @@
   color: #ffffff;
   text-decoration: none;
   padding: 12px 20px;
-  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
