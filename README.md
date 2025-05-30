@@ -25,4 +25,4 @@ web_project_homeland/
 └── .prettierignore # Archivos ignorados por Prettier
 
 GitHub pages:
-https://github.com/esthercorona/web_project_homeland.git
+https://esthercorona.github.io/web_project_homeland/
